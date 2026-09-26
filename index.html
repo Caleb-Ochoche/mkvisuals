@@ -3,16 +3,1496 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MK Visuals</title>
+
+    <title>Caleb Mkaane / MK Visuals</title>
+
+    <meta
+        name="description"
+        content="MK Visuals — Video Editor and Videographer. Explore Caleb Mkaane's video editing, videography and visual work."
+    >
+
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+
+        /* =====================================================
+           MK VISUALS
+           Clean / Minimal / Black & White Portfolio
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --black: #0a0a0a;
+            --dark: #111111;
+            --gray: #666666;
+            --light-gray: #f4f4f4;
+            --border: #e8e8e8;
+            --white: #ffffff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                Inter,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background: var(--white);
+            color: var(--black);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+
+        /* =====================================================
+           CONTAINER
+        ===================================================== */
+
+        .container {
+            width: min(100% - 32px, 900px);
+            margin: 0 auto;
+        }
+
+
+        /* =====================================================
+           NAVIGATION
+        ===================================================== */
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            background: rgba(255,255,255,0.92);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .nav-inner {
+            min-height: 68px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .nav-logo {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .nav-links a {
+            color: #555;
+            transition: color .2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--black);
+        }
+
+        .nav-contact {
+            background: var(--black);
+            color: var(--white) !important;
+
+            padding: 9px 15px;
+            border-radius: 100px;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+            padding: 64px 0 70px;
+            text-align: center;
+        }
+
+        .profile-wrap {
+            position: relative;
+            width: 112px;
+            height: 112px;
+            margin: 0 auto 24px;
+        }
+
+        .profile {
+            width: 112px;
+            height: 112px;
+
+            object-fit: cover;
+            object-position: center;
+
+            border-radius: 50%;
+
+            border: 4px solid var(--white);
+
+            box-shadow:
+                0 0 0 1px var(--border),
+                0 12px 35px rgba(0,0,0,0.10);
+        }
+
+        .available {
+            position: absolute;
+
+            bottom: 2px;
+            right: -3px;
+
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            background: var(--white);
+            border: 1px solid var(--border);
+
+            padding: 5px 9px;
+
+            border-radius: 100px;
+
+            font-size: 10px;
+            font-weight: 700;
+
+            white-space: nowrap;
+
+            box-shadow: 0 5px 15px rgba(0,0,0,.08);
+        }
+
+        .available-dot {
+            width: 7px;
+            height: 7px;
+
+            background: #20a464;
+            border-radius: 50%;
+        }
+
+        .hero h1 {
+            font-size: clamp(30px, 8vw, 52px);
+            letter-spacing: -1.8px;
+            line-height: 1.05;
+            margin-bottom: 12px;
+            font-weight: 800;
+        }
+
+        .hero-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 18px;
+        }
+
+        .hero-bio {
+            max-width: 570px;
+            margin: 0 auto;
+
+            color: #666;
+            font-size: 15px;
+            line-height: 1.75;
+        }
+
+
+        /* =====================================================
+           SOCIAL LINKS
+        ===================================================== */
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+
+            margin-top: 25px;
+        }
+
+        .social {
+            width: 42px;
+            height: 42px;
+
+            border: 1px solid var(--border);
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 13px;
+            font-weight: 800;
+
+            transition:
+                background .2s ease,
+                color .2s ease,
+                transform .2s ease;
+        }
+
+        .social:hover {
+            background: var(--black);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+
+        /* =====================================================
+           SECTION
+        ===================================================== */
+
+        section {
+            padding: 65px 0;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            gap: 20px;
+
+            margin-bottom: 28px;
+        }
+
+        .section-label {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: 5px;
+        }
+
+        .section-title {
+            font-size: clamp(25px, 6vw, 36px);
+            letter-spacing: -1px;
+            line-height: 1.1;
+        }
+
+
+        /* =====================================================
+           WORK FILTERS
+        ===================================================== */
+
+        .filters {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            padding-bottom: 5px;
+
+            scrollbar-width: none;
+        }
+
+        .filters::-webkit-scrollbar {
+            display: none;
+        }
+
+        .filter {
+            flex-shrink: 0;
+
+            border: 1px solid var(--border);
+            background: var(--white);
+
+            padding: 8px 14px;
+
+            border-radius: 100px;
+
+            font-size: 12px;
+            font-weight: 600;
+
+            cursor: pointer;
+
+            transition: all .2s ease;
+        }
+
+        .filter.active,
+        .filter:hover {
+            background: var(--black);
+            color: var(--white);
+            border-color: var(--black);
+        }
+
+
+        /* =====================================================
+           PROJECT GRID
+        ===================================================== */
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .project {
+            border: 1px solid var(--border);
+            border-radius: 18px;
+
+            overflow: hidden;
+
+            background: var(--white);
+
+            cursor: pointer;
+
+            transition:
+                transform .25s ease,
+                box-shadow .25s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 15px 40px rgba(0,0,0,.08);
+        }
+
+        .project-thumb {
+            position: relative;
+
+            aspect-ratio: 16 / 10;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #111,
+                    #333
+                );
+
+            overflow: hidden;
+        }
+
+        .project-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            transition: transform .4s ease;
+        }
+
+        .project:hover .project-thumb img {
+            transform: scale(1.04);
+        }
+
+        .play {
+            position: absolute;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+
+            width: 50px;
+            height: 50px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: rgba(255,255,255,.94);
+
+            font-size: 17px;
+
+            box-shadow: 0 8px 25px rgba(0,0,0,.25);
+        }
+
+        .project-info {
+            padding: 15px;
+        }
+
+        .project-category {
+            font-size: 10px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+            color: #888;
+
+            margin-bottom: 5px;
+        }
+
+        .project-title {
+            font-size: 15px;
+            font-weight: 750;
+        }
+
+
+        /* =====================================================
+           EMPTY WORK STATE
+        ===================================================== */
+
+        .empty-work {
+            border: 1px dashed #d5d5d5;
+            border-radius: 18px;
+
+            padding: 45px 25px;
+
+            text-align: center;
+
+            color: #777;
+        }
+
+        .empty-work strong {
+            display: block;
+
+            color: var(--black);
+
+            margin-bottom: 7px;
+        }
+
+        .empty-work p {
+            font-size: 13px;
+        }
+
+
+        /* =====================================================
+           SERVICES
+        ===================================================== */
+
+        .services {
+            display: grid;
+            gap: 10px;
+        }
+
+        .service {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 20px;
+
+            border: 1px solid var(--border);
+            border-radius: 15px;
+
+            transition:
+                background .2s ease,
+                transform .2s ease;
+        }
+
+        .service:hover {
+            background: var(--light-gray);
+            transform: translateX(3px);
+        }
+
+        .service-name {
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .service-number {
+            color: #aaa;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+
+        /* =====================================================
+           ABOUT
+        ===================================================== */
+
+        .about-card {
+            background: var(--black);
+            color: var(--white);
+
+            border-radius: 22px;
+
+            padding: 30px;
+        }
+
+        .about-card .section-label {
+            color: #999;
+        }
+
+        .about-card h2 {
+            font-size: clamp(25px, 6vw, 38px);
+            letter-spacing: -1px;
+            line-height: 1.1;
+            margin-bottom: 15px;
+        }
+
+        .about-card p {
+            color: #bbb;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           CONTACT
+        ===================================================== */
+
+        .contact {
+            text-align: center;
+            padding-bottom: 80px;
+        }
+
+        .contact h2 {
+            font-size: clamp(30px, 8vw, 48px);
+            letter-spacing: -1.5px;
+            line-height: 1.05;
+            margin-bottom: 14px;
+        }
+
+        .contact-text {
+            max-width: 520px;
+            margin: 0 auto 28px;
+
+            color: #666;
+            font-size: 14px;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+
+            padding: 13px 20px;
+
+            border-radius: 100px;
+
+            font-size: 13px;
+            font-weight: 700;
+
+            transition:
+                transform .2s ease,
+                box-shadow .2s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,.12);
+        }
+
+        .btn-black {
+            background: var(--black);
+            color: var(--white);
+        }
+
+        .btn-white {
+            background: var(--white);
+            color: var(--black);
+            border: 1px solid var(--border);
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+            border-top: 1px solid var(--border);
+
+            padding: 25px 0;
+
+            color: #999;
+            font-size: 11px;
+            text-align: center;
+        }
+
+
+        /* =====================================================
+           VIDEO MODAL
+        ===================================================== */
+
+        .modal {
+            position: fixed;
+            inset: 0;
+
+            z-index: 999;
+
+            display: none;
+            align-items: center;
+            justify-content: center;
+
+            padding: 20px;
+
+            background: rgba(0,0,0,.82);
+
+            backdrop-filter: blur(8px);
+        }
+
+        .modal.open {
+            display: flex;
+        }
+
+        .modal-box {
+            width: min(900px, 100%);
+
+            position: relative;
+
+            background: #000;
+
+            border-radius: 15px;
+
+            overflow: hidden;
+
+            box-shadow: 0 25px 80px rgba(0,0,0,.4);
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+
+            width: 100%;
+            height: 100%;
+
+            border: 0;
+        }
+
+        .close-modal {
+            position: absolute;
+
+            z-index: 5;
+
+            top: 12px;
+            right: 12px;
+
+            width: 38px;
+            height: 38px;
+
+            border: 0;
+            border-radius: 50%;
+
+            background: rgba(0,0,0,.75);
+            color: white;
+
+            cursor: pointer;
+
+            font-size: 20px;
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 600px) {
+
+            .container {
+                width: min(100% - 24px, 900px);
+            }
+
+            .nav-links a:not(.nav-contact) {
+                display: none;
+            }
+
+            .hero {
+                padding-top: 48px;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 50px 0;
+            }
+
+            .section-header {
+                display: block;
+            }
+
+            .filters {
+                margin-top: 18px;
+            }
+
+            .about-card {
+                padding: 25px;
+            }
+        }
+
+    </style>
 </head>
+
 
 <body>
 
-    <h1>MK Visuals</h1>
 
-    <p>Video Editor & Visual Creator</p>
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
 
-    <p>Welcome to my portfolio.</p>
+    <nav>
+
+        <div class="container nav-inner">
+
+            <a href="#">
+                <img
+                    src="logo.jpg"
+                    alt="MK Visuals"
+                    class="nav-logo"
+                >
+            </a>
+
+            <div class="nav-links">
+
+                <a href="#work">
+                    Work
+                </a>
+
+                <a href="#services">
+                    Services
+                </a>
+
+                <a
+                    href="#contact"
+                    class="nav-contact"
+                >
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="container">
+
+                <div class="profile-wrap">
+
+                    <img
+                        src="profile.jpg"
+                        alt="Caleb Mkaane"
+                        class="profile"
+                    >
+
+                    <div class="available">
+
+                        <span class="available-dot"></span>
+
+                        Available for work
+
+                    </div>
+
+                </div>
+
+
+                <h1>
+                    Caleb Mkaane
+                </h1>
+
+                <div class="hero-title">
+                    Video Editor / Videographer
+                </div>
+
+                <p class="hero-bio">
+
+                    I’m a video editor and videographer focused on
+                    creating engaging, polished visuals that help
+                    people and brands tell their stories, connect
+                    with their audience, and stand out.
+
+                </p>
+
+
+                <!-- SOCIAL LINKS -->
+
+                <div class="socials">
+
+                    <a
+                        class="social"
+                        href="https://www.instagram.com/calebmkvisuals/"
+                        target="_blank"
+                        aria-label="Instagram"
+                    >
+                        IG
+                    </a>
+
+                    <a
+                        class="social"
+                        href="https://www.tiktok.com/@calebmkvisuals"
+                        target="_blank"
+                        aria-label="TikTok"
+                    >
+                        TK
+                    </a>
+
+                    <a
+                        class="social"
+                        href="https://youtube.com/@calebmkvisuals"
+                        target="_blank"
+                        aria-label="YouTube"
+                    >
+                        YT
+                    </a>
+
+                    <a
+                        class="social"
+                        href="https://www.facebook.com/share/1BvkDhyGHq/"
+                        target="_blank"
+                        aria-label="Facebook"
+                    >
+                        FB
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             WORK
+        ================================================== -->
+
+        <section id="work">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <div class="section-label">
+                            Portfolio
+                        </div>
+
+                        <h2 class="section-title">
+                            Selected Work
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FILTERS -->
+
+                <div class="filters">
+
+                    <button
+                        class="filter active"
+                        data-filter="All"
+                    >
+                        All
+                    </button>
+
+                    <button
+                        class="filter"
+                        data-filter="Short-form"
+                    >
+                        Short-form
+                    </button>
+
+                    <button
+                        class="filter"
+                        data-filter="YouTube"
+                    >
+                        YouTube
+                    </button>
+
+                    <button
+                        class="filter"
+                        data-filter="Cinematic"
+                    >
+                        Cinematic
+                    </button>
+
+                    <button
+                        class="filter"
+                        data-filter="UGC"
+                    >
+                        UGC
+                    </button>
+
+                    <button
+                        class="filter"
+                        data-filter="Events"
+                    >
+                        Events
+                    </button>
+
+                </div>
+
+
+                <!-- PROJECTS WILL APPEAR HERE -->
+
+                <div
+                    class="projects"
+                    id="projects"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SERVICES
+        ================================================== -->
+
+        <section id="services">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <div class="section-label">
+                            What I do
+                        </div>
+
+                        <h2 class="section-title">
+                            Services
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="services">
+
+                    <div class="service">
+
+                        <span class="service-name">
+                            Video Editing
+                        </span>
+
+                        <span class="service-number">
+                            01
+                        </span>
+
+                    </div>
+
+
+                    <div class="service">
+
+                        <span class="service-name">
+                            Videography
+                        </span>
+
+                        <span class="service-number">
+                            02
+                        </span>
+
+                    </div>
+
+
+                    <div class="service">
+
+                        <span class="service-name">
+                            Thumbnail Creation
+                        </span>
+
+                        <span class="service-number">
+                            03
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+        <section>
+
+            <div class="container">
+
+                <div class="about-card">
+
+                    <div class="section-label">
+                        About MK Visuals
+                    </div>
+
+                    <h2>
+                        Turning ideas into visuals.
+                    </h2>
+
+                    <p>
+
+                        MK Visuals is a creative media brand focused
+                        on video editing, videography and digital
+                        visual content. From short-form social content
+                        to cinematic projects and branded videos,
+                        the goal is simple: create visuals that
+                        communicate clearly and leave an impression.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CONTACT
+        ================================================== -->
+
+        <section
+            class="contact"
+            id="contact"
+        >
+
+            <div class="container">
+
+                <div class="section-label">
+                    Let's work together
+                </div>
+
+                <h2>
+                    Have a project<br>
+                    in mind?
+                </h2>
+
+                <p class="contact-text">
+
+                    Tell me what you're working on and let's
+                    create something worth watching.
+
+                </p>
+
+
+                <div class="contact-buttons">
+
+                    <a
+                        href="mailto:calebmkvisuals@gmail.com"
+                        class="btn btn-black"
+                    >
+                        ✉ Email Me
+                    </a>
+
+
+                    <a
+                        href="https://wa.me/2349043612254"
+                        target="_blank"
+                        class="btn btn-white"
+                    >
+                        WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <div class="container">
+
+            © <span id="year"></span>
+            MK Visuals · Caleb Mkaane
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         VIDEO MODAL
+    ====================================================== -->
+
+    <div
+        class="modal"
+        id="videoModal"
+    >
+
+        <div class="modal-box">
+
+            <button
+                class="close-modal"
+                id="closeModal"
+                aria-label="Close video"
+            >
+                ×
+            </button>
+
+            <div class="video-wrapper">
+
+                <iframe
+                    id="videoFrame"
+                    allow="autoplay; encrypted-media; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+
+        /* =====================================================
+           MK VISUALS PROJECTS
+
+           ADD YOUR VIDEOS HERE.
+
+           Example:
+
+           {
+               title: "My Cinematic Edit",
+               category: "Cinematic",
+               video: "https://www.youtube.com/watch?v=XXXXXXXXXXX"
+           }
+
+        ====================================================== */
+
+
+        const projects = [
+
+            /*
+            {
+                title: "Your First Project",
+                category: "Short-form",
+                video: "PASTE_YOUTUBE_LINK_HERE"
+            },
+
+            {
+                title: "Another Project",
+                category: "Cinematic",
+                video: "PASTE_YOUTUBE_LINK_HERE"
+            }
+            */
+
+        ];
+
+
+
+        /* =====================================================
+           PROJECT DISPLAY
+        ====================================================== */
+
+        const projectsContainer =
+            document.getElementById("projects");
+
+
+        function getYouTubeID(url) {
+
+            if (!url) return null;
+
+            const patterns = [
+
+                /youtube\.com\/watch\?v=([^&]+)/,
+
+                /youtu\.be\/([^?&]+)/,
+
+                /youtube\.com\/shorts\/([^?&]+)/,
+
+                /youtube\.com\/embed\/([^?&]+)/
+
+            ];
+
+            for (const pattern of patterns) {
+
+                const match = url.match(pattern);
+
+                if (match) {
+                    return match[1];
+                }
+
+            }
+
+            return null;
+        }
+
+
+
+        function renderProjects(filter = "All") {
+
+            projectsContainer.innerHTML = "";
+
+            const filtered =
+                filter === "All"
+                    ? projects
+                    : projects.filter(
+                        project =>
+                            project.category === filter
+                    );
+
+
+            if (filtered.length === 0) {
+
+                projectsContainer.innerHTML = `
+
+                    <div class="empty-work">
+
+                        <strong>
+                            Portfolio coming together.
+                        </strong>
+
+                        <p>
+                            New projects will appear here soon.
+                        </p>
+
+                    </div>
+
+                `;
+
+                return;
+            }
+
+
+            filtered.forEach(project => {
+
+                const youtubeID =
+                    getYouTubeID(project.video);
+
+
+                const thumbnail =
+                    youtubeID
+                        ? `https://img.youtube.com/vi/${youtubeID}/maxresdefault.jpg`
+                        : "";
+
+
+                const card =
+                    document.createElement("article");
+
+
+                card.className = "project";
+
+
+                card.innerHTML = `
+
+                    <div class="project-thumb">
+
+                        ${
+                            thumbnail
+                                ? `
+                                    <img
+                                        src="${thumbnail}"
+                                        alt="${project.title}"
+                                        loading="lazy"
+                                    >
+                                  `
+                                : ""
+                        }
+
+                        <div class="play">
+                            ▶
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-info">
+
+                        <div class="project-category">
+                            ${project.category}
+                        </div>
+
+                        <div class="project-title">
+                            ${project.title}
+                        </div>
+
+                    </div>
+
+                `;
+
+
+                card.addEventListener(
+                    "click",
+                    () => openVideo(project.video)
+                );
+
+
+                projectsContainer.appendChild(card);
+
+            });
+
+        }
+
+
+
+        /* =====================================================
+           VIDEO MODAL
+        ====================================================== */
+
+        const modal =
+            document.getElementById("videoModal");
+
+        const videoFrame =
+            document.getElementById("videoFrame");
+
+        const closeModal =
+            document.getElementById("closeModal");
+
+
+        function openVideo(url) {
+
+            const id = getYouTubeID(url);
+
+            if (!id) return;
+
+            videoFrame.src =
+                `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
+
+            modal.classList.add("open");
+
+            document.body.style.overflow = "hidden";
+        }
+
+
+        function closeVideo() {
+
+            modal.classList.remove("open");
+
+            videoFrame.src = "";
+
+            document.body.style.overflow = "";
+        }
+
+
+        closeModal.addEventListener(
+            "click",
+            closeVideo
+        );
+
+
+        modal.addEventListener(
+            "click",
+            event => {
+
+                if (event.target === modal) {
+                    closeVideo();
+                }
+
+            }
+        );
+
+
+        document.addEventListener(
+            "keydown",
+            event => {
+
+                if (event.key === "Escape") {
+                    closeVideo();
+                }
+
+            }
+        );
+
+
+
+        /* =====================================================
+           FILTERS
+        ====================================================== */
+
+        document.querySelectorAll(".filter")
+            .forEach(button => {
+
+                button.addEventListener(
+                    "click",
+                    () => {
+
+                        document
+                            .querySelectorAll(".filter")
+                            .forEach(btn =>
+                                btn.classList.remove("active")
+                            );
+
+
+                        button.classList.add("active");
+
+
+                        renderProjects(
+                            button.dataset.filter
+                        );
+
+                    }
+                );
+
+            });
+
+
+
+        /* =====================================================
+           FOOTER YEAR
+        ====================================================== */
+
+        document.getElementById("year")
+            .textContent = new Date().getFullYear();
+
+
+
+        /* =====================================================
+           INITIAL LOAD
+        ====================================================== */
+
+        renderProjects();
+
+    </script>
 
 </body>
 </html>
